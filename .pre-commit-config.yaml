@@ -1,0 +1,46 @@
+default_language_version:
+  python: python3.8.5
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-json
+    - id: check-merge-conflict
+    - id: check-toml
+    - id: detect-private-key
+    - id: debug-statements
+    - id: name-tests-test
+
+-   repo: local
+    hooks:
+    - id: isort
+      name: isort
+      language: system
+      entry: isort ./tasks ./tests --recursive -m 3 -tc -w 120
+      types: [python]
+      pass_filenames: false
+    - id: black
+      name: black
+      stages: [commit]
+      language: system
+      entry: black -l 120 ./tasks ./tests
+      types: [python]
+      pass_filenames: false
+    - id: mypy
+      name: mypy
+      stages: [commit]
+      language: system
+      entry: mypy ./tasks --strict
+      types: [python]
+      pass_filenames: false
+    - id: flake8
+      name: flake8
+      stages: [commit]
+      language: system
+      entry: flake8 ./tasks ./tests --max-line-length=120 --doctests --ignore W503
+      types: [python]
+      pass_filenames: false

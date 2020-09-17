@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "etl-tasks"
+version = "0.0.2"
+description = "Data Science & Engineering tasks"
+authors = ["Leo Parkes-Neptune <leo.parkes.neptune+github.etl_tasks@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.8.5"
+pytest = "6.0.2"
