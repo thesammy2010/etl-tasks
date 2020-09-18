@@ -1,8 +1,9 @@
 # A repo which lists data science and data engineering tasks
 
 ### Basic
-1. Word analytics on page of text
-2. Creating CSV from plain text
+- [x] Word analytics on page of text
+- [x] Creating CSV from plain text
+- [x] Transforming results from public API
 
 ### Junior
 
