@@ -54,3 +54,9 @@ repos:
     entry: flake8 ./tasks ./tests --max-line-length=120 --doctests --ignore W503
     types: [python]
     pass_filenames: false
+  - id: pytest
+    name: pytest
+    language: system
+    entry: pytest --doctest-modules --disable-pytest-warnings
+    types: [python]
+    pass_filenames: false
