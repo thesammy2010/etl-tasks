@@ -30,7 +30,7 @@ repos:
   - id: isort
     name: isort
     language: system
-    entry: isort ./tasks ./tests --recursive -m 3 -tc -w 120
+    entry: isort ./tasks ./tests -w 120
     types: [python]
     pass_filenames: false
   - id: black

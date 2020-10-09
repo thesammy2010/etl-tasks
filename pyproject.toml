@@ -5,10 +5,11 @@ description = "Data Science & Engineering tasks"
 authors = ["Leo Parkes-Neptune <leo.parkes.neptune+github.etl_tasks@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.8.5"
+python = "3.8.6"
 pytest = "^6.0.2"
 requests = "^2.24.0"
 isort = "^5.5.2"
 mypy = "^0.782"
 flake8 = "^3.8.3"
 pylint = "^2.6.0"
+mock = "^4.0.2"
