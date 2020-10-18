@@ -15,4 +15,4 @@ jobs:
         pip install poetry pytest
     - name: Running tests with pytest
       run: |
-        poetry install && pytest --doctest-modules --disable-pytest-warnings
+        poetry install && python -m pytest tests/unit--doctest-modules --disable-pytest-warnings

@@ -9,6 +9,5 @@ class TestAPIRequests(TestCase):
 
         mock_requests.json.return_value = {"rates": {"CAD": 1.56, "HKD": 9.29}}
         mock_requests.response_code.return_value = 200
-        # mock_response.
 
         self.assertTrue(get_response(), mock_requests.json.return_value)

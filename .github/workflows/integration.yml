@@ -1,0 +1,25 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install poetry pytest
+    - name: Running tests with pytest
+      run: |
+        poetry install && python -m pytest tests/integration --doctest-modules --disable-pytest-warnings
+      env:
+        PG_REMOTE_USERNAME: ${{ secrets.PG_REMOTE_USERNAME }}
+        PG_REMOTE_PASSWORD: ${{ secrets.PG_REMOTE_PASSWORD }}
+        PG_REMOTE_HOST: ${{ secrets.PG_REMOTE_HOST }}
+        PG_REMOTE_PORT: ${{ secrets.PG_REMOTE_PORT }}
+        PG_REMOTE_DATABASE: ${{ secrets.PG_REMOTE_DATABASE }}
+        PG_REMOTE_SSLMODE: ${{ secrets.PG_REMOTE_SSLMODE }}
