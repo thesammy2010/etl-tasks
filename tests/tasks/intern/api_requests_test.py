@@ -1,10 +1,9 @@
-import unittest
-from unittest import mock
+from unittest import TestCase, mock
 
-from tasks.basic.api_requests.task import get_response
+from tasks.intern.api_requests.task import get_response
 
 
-class TestAPIRequests(unittest.TestCase):
+class TestAPIRequests(TestCase):
     @mock.patch("requests.get")
     def test_get_response(self, mock_requests):
 

@@ -1,17 +1,8 @@
-from typing import Any, Iterable, Optional, Union
+from typing import Optional, Union
 
 
 class Ball(object):
-    def __init__(
-        self,
-        position: float = 0,
-        speed: float = 0,
-        acceleration: float = 0,
-        *args: Iterable[Any],
-        **kwargs: Iterable[Any]
-    ) -> None:
-
-        # super().__init__(*args, **kwargs)
+    def __init__(self, position: float = 0, speed: float = 0, acceleration: float = 0) -> None:
 
         if position < 0:
             raise Exception("Position cannot be negative")

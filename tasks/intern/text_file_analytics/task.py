@@ -1,10 +1,13 @@
+import os
 from collections import OrderedDict
 from typing import Dict, List, Set, Tuple
 
 
 def main() -> None:
 
-    with open("sample.txt", mode="r") as file:
+    filepath = os.path.join(str(__file__)[:-8], "sample.txt")
+
+    with open(file=filepath, mode="r") as file:
 
         file_data: List[str] = [line for line in file]
 
@@ -21,7 +24,7 @@ def main() -> None:
         word_count_ordered: Dict[str, int] = {
             word: count for word, count in sorted(word_count_tuple, key=lambda item: item[1], reverse=True)
         }
-        word_count_dict: OrderedDict[str, int] = OrderedDict(word_count_ordered)
+        word_count_dict: OrderedDict[str, int] = OrderedDict(word_count_ordered)  # pylint: disable=E1136
 
         print("Number of unique words in file: {}".format(len(list_of_unique_words)))
         print("Occurrence of the top 5 most common word: {}".format(list(word_count_dict.items())[:5]))

@@ -57,7 +57,7 @@ marker = "sys_platform == \"win32\""
 name = "colorama"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "0.4.3"
+version = "0.4.4"
 
 [[package]]
 category = "main"
@@ -86,7 +86,7 @@ description = "iniconfig: brain-dead simple config-ini parsing"
 name = "iniconfig"
 optional = false
 python-versions = "*"
-version = "1.0.1"
+version = "1.1.1"
 
 [[package]]
 category = "main"
@@ -94,7 +94,7 @@ description = "A Python utility / library to sort Python imports."
 name = "isort"
 optional = false
 python-versions = ">=3.6,<4.0"
-version = "5.6.1"
+version = "5.6.4"
 
 [package.extras]
 colors = ["colorama (>=0.4.3,<0.5.0)"]
@@ -116,19 +116,6 @@ name = "mccabe"
 optional = false
 python-versions = "*"
 version = "0.6.1"
-
-[[package]]
-category = "main"
-description = "Rolling backport of unittest.mock for all Pythons"
-name = "mock"
-optional = false
-python-versions = ">=3.6"
-version = "4.0.2"
-
-[package.extras]
-build = ["twine", "wheel", "blurb"]
-docs = ["sphinx"]
-test = ["pytest", "pytest-cov"]
 
 [[package]]
 category = "main"
@@ -318,9 +305,9 @@ python-versions = "*"
 version = "1.12.1"
 
 [metadata]
-content-hash = "bd7d7270390021dc474610cc16174d3a5bcd702356f028ce509012aca30ced1a"
+content-hash = "4fd35c93b856a50d62ea53a6729492e149df85cbb69da7bf25f8464557f6c92d"
 lock-version = "1.0"
-python-versions = "3.8.5"
+python-versions = "3.8.6"
 
 [metadata.files]
 astroid = [
@@ -344,8 +331,8 @@ chardet = [
     {file = "chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"},
 ]
 colorama = [
-    {file = "colorama-0.4.3-py2.py3-none-any.whl", hash = "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff"},
-    {file = "colorama-0.4.3.tar.gz", hash = "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"},
+    {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
+    {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
 flake8 = [
     {file = "flake8-3.8.4-py2.py3-none-any.whl", hash = "sha256:749dbbd6bfd0cf1318af27bf97a14e28e5ff548ef8e5b1566ccfb25a11e7c839"},
@@ -356,12 +343,12 @@ idna = [
     {file = "idna-2.10.tar.gz", hash = "sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"},
 ]
 iniconfig = [
-    {file = "iniconfig-1.0.1-py3-none-any.whl", hash = "sha256:80cf40c597eb564e86346103f609d74efce0f6b4d4f30ec8ce9e2c26411ba437"},
-    {file = "iniconfig-1.0.1.tar.gz", hash = "sha256:e5f92f89355a67de0595932a6c6c02ab4afddc6fcdc0bfc5becd0d60884d3f69"},
+    {file = "iniconfig-1.1.1-py2.py3-none-any.whl", hash = "sha256:011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3"},
+    {file = "iniconfig-1.1.1.tar.gz", hash = "sha256:bc3af051d7d14b2ee5ef9969666def0cd1a000e121eaea580d4a313df4b37f32"},
 ]
 isort = [
-    {file = "isort-5.6.1-py3-none-any.whl", hash = "sha256:dd3211f513f4a92ec1ec1876fc1dc3c686649c349d49523f5b5adbb0814e5960"},
-    {file = "isort-5.6.1.tar.gz", hash = "sha256:2f510f34ae18a8d0958c53eec51ef84fd099f07c4c639676525acbcd7b5bd3ff"},
+    {file = "isort-5.6.4-py3-none-any.whl", hash = "sha256:dcab1d98b469a12a1a624ead220584391648790275560e1a43e54c5dceae65e7"},
+    {file = "isort-5.6.4.tar.gz", hash = "sha256:dcaeec1b5f0eca77faea2a35ab790b4f3680ff75590bfcb7145986905aab2f58"},
 ]
 lazy-object-proxy = [
     {file = "lazy-object-proxy-1.4.3.tar.gz", hash = "sha256:f3900e8a5de27447acbf900b4750b0ddfd7ec1ea7fbaf11dfa911141bc522af0"},
@@ -389,10 +376,6 @@ lazy-object-proxy = [
 mccabe = [
     {file = "mccabe-0.6.1-py2.py3-none-any.whl", hash = "sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42"},
     {file = "mccabe-0.6.1.tar.gz", hash = "sha256:dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"},
-]
-mock = [
-    {file = "mock-4.0.2-py3-none-any.whl", hash = "sha256:3f9b2c0196c60d21838f307f5825a7b86b678cedc58ab9e50a8988187b4d81e0"},
-    {file = "mock-4.0.2.tar.gz", hash = "sha256:dd33eb70232b6118298d516bbcecd26704689c386594f0f3c4f13867b2c56f72"},
 ]
 mypy = [
     {file = "mypy-0.782-cp35-cp35m-macosx_10_6_x86_64.whl", hash = "sha256:2c6cde8aa3426c1682d35190b59b71f661237d74b053822ea3d748e2c9578a7c"},
