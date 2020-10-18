@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Python Tasks"
-version = "0.0.2"
+version = "0.0.0"
 description = "Data Science & Engineering tasks"
 authors = ["Leo Parkes-Neptune <leo.parkes.neptune+github.etl_tasks@gmail.com>"]
 

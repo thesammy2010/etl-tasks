@@ -16,6 +16,7 @@
 - [ ] Integration tests
 
 ### Intermediate
+- [ ] Local tests using `docker-compose`
 - [ ] Apache Airflow DAGs (Composer)
 - [ ] Apache Spark Pipeline (DataProc)
 - [ ] Apache Beam Pipeline (PubSub)
