@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+    test:
+        image: i-like-python
+        restart: always
+        environment:
+            - PG_REMOTE_USERNAME=${PG_REMOTE_USERNAME}
+            - PG_REMOTE_PASSWORD=${PG_REMOTE_PASSWORD}
+            - PG_REMOTE_HOST=${PG_REMOTE_HOST}
+            - PG_REMOTE_PORT=${PG_REMOTE_PORT}
+            - PG_REMOTE_DATABASE=${PG_REMOTE_DATABASE}
+            - PG_REMOTE_SSLMODE=${PG_REMOTE_SSLMODE}
+        volumes:
+            - ../i-like-python:/usr/local/i-like-python
+        command: |
+            bash -c ". venv/bin/activate && python -m pytest tasks tests --doctest-modules --disable-pytest-warnings"
